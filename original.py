@@ -49,7 +49,7 @@ list_of_interesting_codes = {
 
 pattern = re.compile(b'\r\n(?=!)')
 
-telegram = ''
+telegram = b''
 checksum_found = False
 good_checksum = False
 
@@ -59,7 +59,7 @@ while True:
     except:
         sys.exit("Fout bij het openen van %s. Aaaaarch." % ser.name)
 
-    telegram = ''
+    telegram = b''
     checksum_found = False
 
     while not checksum_found:
