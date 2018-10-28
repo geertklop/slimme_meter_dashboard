@@ -63,7 +63,8 @@ while True:
         ser.open()
     except:
         sys.exit("Fout bij het openen van %s. Aaaaarch." % ser.name)
-    telegram = ''
+
+    telegram = b''
     checksum_found = False
 
     while not checksum_found:
