@@ -91,12 +91,10 @@ while True:
     print('success')
 
 
-
-
     for code, value in sorted(telegram_values.items()):
         if code in list_of_interesting_codes:
             # Cleanup value
-            clean_value = float(value.lstrip(b'\(').rstrip(r'\)*kWhA'))
+            clean_value = float(value.lstrip(b'\(').rstrip(b'\)*kWhA'))
             # Print nicely formatted string
 
             print(code, ': ', list_of_interesting_codes[code], ' - ', clean_value)
