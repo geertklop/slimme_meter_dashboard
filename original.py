@@ -23,12 +23,6 @@ ser.rtscts=0
 ser.timeout=20
 ser.port="/dev/ttyUSB0"
 
-#Open COM port
-try:
-    ser.open()
-except:
-    sys.exit ("Fout bij het openen van %s. Aaaaarch."  % ser.name)
-
 list_of_interesting_codes = {
     '1-0:1.8.1': 'Meter Reading electricity delivered to client (Tariff 1) in kWh',
     '1-0:1.8.2': 'Meter Reading electricity delivered to client (Tariff 2) in kWh',
@@ -65,7 +59,10 @@ checksum_found = False
 good_checksum = False
 
 while True:
-    ser.open()
+    try:
+        ser.open()
+    except:
+        sys.exit("Fout bij het openen van %s. Aaaaarch." % ser.name)
     telegram = ''
     checksum_found = False
 
