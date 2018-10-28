@@ -27,12 +27,11 @@ p1_result = []
 p1_line = str(ser.readLine())
 print(p1_line)
 
-# while line_counter < 26:
-#     p1_line = ''
-#     try:
-#         p1_raw = ser.readLine()
-#     except:
-#         sys.exit("Seriele poort %s kan niet gelezen worden. Programma afgebroken." % ser.name)
+#Close port and show status
+try:
+    ser.close()
+except:
+    sys.exit ("Oops %s. Programma afgebroken. Kon de seriele poort niet sluiten." % ser.name )
 
 
 
