@@ -70,7 +70,7 @@ while True:
         # Read in a line
         telegram_line = str(ser.readline())
 
-        if re.match(r'(?=!)', telegram_line):
+        if re.match(r'(!)', telegram_line):
             print(telegram_line)
             telegram = telegram + str(telegram_line)
             checksum_found = True
