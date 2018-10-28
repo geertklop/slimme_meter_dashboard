@@ -65,7 +65,7 @@ while True:
     while not checksum_found:
         # Read in a line
         telegram_line = ser.readline()
-        print(str(telegram_line))
+        print(telegram_line.decode("utf-8"))
 
         if re.match(b'(?=!)', telegram_line):
             print('')
