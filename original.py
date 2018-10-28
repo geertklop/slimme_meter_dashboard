@@ -44,7 +44,8 @@ list_of_interesting_codes = {
     '1-0:61.7.0': 'Instantaneous active power L3 (+P) in kW',
     '1-0:22.7.0': 'Instantaneous active power L1 (-P) in kW',
     '1-0:42.7.0': 'Instantaneous active power L2 (-P) in kW',
-    '1-0:62.7.0': 'Instantaneous active power L3 (-P) in kW'
+    '1-0:62.7.0': 'Instantaneous active power L3 (-P) in kW',
+    '0-1:24.2.1': 'Last 5-minute value, gas delivered in m3'
 }
 
 pattern = re.compile(b'\r\n(?=!)')
