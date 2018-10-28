@@ -90,9 +90,8 @@ while True:
 
     print('success')
 
-
     for code, value in sorted(telegram_values.items()):
-        if code in list_of_interesting_codes:
+        if code.decode('utf-8') in list_of_interesting_codes:
             # Cleanup value
             clean_value = float(value.lstrip(b'\(').rstrip(b'\)*kWhA'))
             # Print nicely formatted string
