@@ -64,7 +64,7 @@ while True:
     except:
         sys.exit("Fout bij het openen van %s. Aaaaarch." % ser.name)
 
-    telegram = b''
+    telegram = ''
     checksum_found = False
 
     while not checksum_found:
@@ -74,34 +74,30 @@ while True:
         if re.match(b'(?=!)', telegram_line):
             print(str(telegram_line))
             print('')
-            telegram = telegram + telegram_line
+            telegram = telegram + str(telegram_line)
             checksum_found = True
         else:
             print(str(telegram_line))
-            telegram = telegram + telegram_line
+            telegram = telegram + str(telegram_line)
 
 
     ser.close()
 
-    for m in pattern.finditer(telegram):
-        # Remove the exclamation mark from the checksum,
-        # and make an integer out of it.
-        given_checksum = int('0x' + telegram[m.end() + 1:].decode('ascii'), 16)
 
     telegram_values = dict()
-    for telegram_line in telegram.split(b'\r\n'):
+    for telegram_line in telegram.split(r'\r\n'):
         # Split the OBIS code from the value
         # The lines with a OBIS code start with a number
-        if re.match(b'\d', telegram_line):
-            code = b''.join(re.split(b'(\()', telegram_line)[:1])
-            value = b''.join(re.split(b'(\()', telegram_line)[1:])
+        if re.match(r'\d', telegram_line):
+            code = ''.join(re.split(b'(\()', telegram_line)[:1])
+            value = ''.join(re.split(b'(\()', telegram_line)[1:])
             telegram_values[code] = value
             print(telegram_values)
 
     for code, value in sorted(telegram_values.items()):
         if code in list_of_interesting_codes:
             # Cleanup value
-            value = float(value.lstrip(b'\(').rstrip(b'\)*kWhA'))
+            value = float(value.lstrip(r'\(').rstrip(r'\)*kWhA'))
             # Print nicely formatted string
 
             print("{0:<63}{1:>12}".format(list_of_interesting_codes[code], value))
