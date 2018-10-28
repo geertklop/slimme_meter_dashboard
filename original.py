@@ -69,10 +69,10 @@ while True:
 
         if re.match(b'(?=!)', telegram_line):
             print('')
-            telegram = telegram + str(telegram_line)
+            telegram = telegram + telegram_line.decode('utf-8')
             checksum_found = True
         else:
-            telegram = telegram + str(telegram_line)
+            telegram = telegram + telegram_line.decode('utf-8')
 
     ser.close()
     print('Sucess ')
