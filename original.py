@@ -59,7 +59,7 @@ while True:
     except:
         sys.exit("Fout bij het openen van %s. Aaaaarch." % ser.name)
 
-    telegram = ''
+    telegram = []
     checksum_found = False
 
     while not checksum_found:
@@ -69,16 +69,16 @@ while True:
 
         if re.match(b'(?=!)', telegram_line):
             print('')
-            telegram = telegram + telegram_line.decode('utf-8')
+            telegram.append(telegram_line.decode('utf-8'))
             checksum_found = True
         else:
-            telegram = telegram + telegram_line.decode('utf-8')
+            telegram.append(telegram_line.decode('utf-8'))
 
     ser.close()
     print('Sucess ')
 
     telegram_values = dict()
-    for telegram_line in telegram.split(r'\r\n'):
+    for telegram_line in telegram:
         # Split the OBIS code from the value
         # The lines with a OBIS code start with a number
         if re.match(r'\d', telegram_line):
