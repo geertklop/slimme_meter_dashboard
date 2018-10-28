@@ -87,8 +87,6 @@ while True:
         # Remove the exclamation mark from the checksum,
         # and make an integer out of it.
         given_checksum = int('0x' + telegram[m.end() + 1:].decode('ascii'), 16)
-        # The exclamation mark is also part of the text to be CRC16'd
-        calculated_checksum = crc16(telegram[:m.end() + 1])
 
     telegram_values = dict()
     for telegram_line in telegram.split(b'\r\n'):
