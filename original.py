@@ -103,3 +103,4 @@ while True:
             print("{0:<63}{1:>12}".format(list_of_interesting_codes[code], value))
 
 
+    break
