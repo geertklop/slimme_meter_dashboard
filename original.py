@@ -71,11 +71,11 @@ while True:
         telegram_line = ser.readline()
         if re.match(b'(?=!)', telegram_line):
             print(telegram_line)
-            telegram = telegram + telegram_line
+            telegram = telegram + str(telegram_line)
             checksum_found = True
         else:
             print(telegram_line)
-            telegram = telegram + telegram_line
+            telegram = telegram + str(telegram_line)
 
 
     ser.close()
