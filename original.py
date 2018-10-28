@@ -5,12 +5,6 @@ import sys
 import serial
 import re
 
-##############################################################################
-#Main program
-##############################################################################
-print ("DSMR P1 uitlezen",  versie)
-print ("Control-C om te stoppen")
-print ("Pas eventueel de waarde ser.port aan in het python script")
 
 #Set COM port config
 ser = serial.Serial()
@@ -23,6 +17,7 @@ ser.rtscts=0
 ser.timeout=20
 ser.port="/dev/ttyUSB0"
 
+# interesting DSMR 5 codes
 list_of_interesting_codes = {
     '1-0:1.8.1': 'Meter Reading electricity delivered to client (Tariff 1) in kWh',
     '1-0:1.8.2': 'Meter Reading electricity delivered to client (Tariff 2) in kWh',
@@ -80,9 +75,8 @@ while True:
             print(str(telegram_line))
             telegram = telegram + str(telegram_line)
 
-
     ser.close()
-
+    print('Sucess ')
 
     telegram_values = dict()
     for telegram_line in telegram.split(r'\r\n'):
