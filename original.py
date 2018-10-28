@@ -59,31 +59,31 @@ while True:
     except:
         sys.exit("Fout bij het openen van %s. Aaaaarch." % ser.name)
 
-    telegram = []
+    telegram = ''
     checksum_found = False
 
     while not checksum_found:
         # Read in a line
         telegram_line = ser.readline()
-        print(telegram_line.decode("utf-8"))
+        print(str(telegram_line))
 
         if re.match(b'(?=!)', telegram_line):
             print('')
-            telegram.append(telegram_line.decode('utf-8'))
+            telegram = telegram + telegram_line
             checksum_found = True
         else:
-            telegram.append(telegram_line.decode('utf-8'))
+            telegram = telegram + telegram_line
 
     ser.close()
     print('Sucess ')
 
     telegram_values = dict()
-    for telegram_line in telegram:
+    for telegram_line in telegram.split(b'\r\n'):
         # Split the OBIS code from the value
         # The lines with a OBIS code start with a number
         if re.match(r'\d', telegram_line):
-            code = ''.join(re.split(r'(\()', telegram_line)[:1])
-            value = ''.join(re.split(r'(\()', telegram_line)[1:])
+            code = b''.join(re.split(b'(\()', telegram_line)[:1])
+            value = b''.join(re.split(b'(\()', telegram_line)[1:])
             telegram_values[code] = value
 
     print('Success2', telegram_values)
@@ -92,7 +92,7 @@ while True:
     for code, value in sorted(telegram_values.items()):
         if code in list_of_interesting_codes:
             # Cleanup value
-            value = float(value.lstrip(r'\(').rstrip(r'\)*kWhA'))
+            value = float(value.lstrip(b'\(').rstrip(r'\)*kWhA'))
             # Print nicely formatted string
 
             print("{0:<63}{1:>12}".format(list_of_interesting_codes[code], value))
