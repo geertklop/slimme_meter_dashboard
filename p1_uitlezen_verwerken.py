@@ -18,4 +18,19 @@ try:
 except:
     sys.exit ("Fout bij het openen van %s. Programma afgebroken."  % ser.name)
 
-print('Niels, Ik hou van je!')
+# line_counter is counter of lines read in serial
+# p1 result = list of lines
+line_counter = 0
+p1_result = []
+
+print(ser.readLine())
+
+# while line_counter < 26:
+#     p1_line = ''
+#     try:
+#         p1_raw = ser.readLine()
+#     except:
+#         sys.exit("Seriele poort %s kan niet gelezen worden. Programma afgebroken." % ser.name)
+
+
+
