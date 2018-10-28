@@ -26,7 +26,7 @@ ser.port="/dev/ttyUSB0"
 try:
     ser.open()
 except:
-    sys.exit ("Fout bij het openen van %s. Aaaaarch."  % ser.name)
+    sys.exit ("Fout bij het openen van %s. Aaaaarch."  % ser.name)      
 
 
 #Initialize
@@ -39,7 +39,7 @@ while p1_teller < 26:
     try:
         p1_raw = ser.readline()
     except:
-        sys.exit ("Seriele poort %s kan niet gelezen worden. Aaaaaaaaarch." % ser.name )
+        sys.exit ("Seriele poort %s kan niet gelezen worden. Aaaaaaaaarch." % ser.name )      
     p1_str=str(p1_raw)
     p1_line=p1_str.strip()
 # als je alles wil zien moet je de volgende line uncommenten
@@ -50,4 +50,4 @@ while p1_teller < 26:
 try:
     ser.close()
 except:
-    sys.exit ("Oops %s. Programma afgebroken. Kon de seriele poort niet sluiten." % ser.name )
+    sys.exit ("Oops %s. Programma afgebroken. Kon de seriele poort niet sluiten." % ser.name )      

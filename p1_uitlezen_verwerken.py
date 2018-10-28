@@ -38,6 +38,31 @@ while line_counter < 26:
     line_counter += 1
     print(p1_result)
 
+
+# extract result
+p1_result_slicer = 0
+meter = 0
+
+while p1_result_slicer < 26:
+    # verbruikt vermogen
+    if p1_result[p1_result_slicer][0:9] == "1-0:1.8.1":
+        daldag = float(p1_result[p1_result_slicer][10:16])
+
+    elif p1_result[p1_result_slicer][0:9] == "1-0:1.8.2":
+        piekdag = float(p1_result[p1_result_slicer][10:16])
+
+    #teruggeleverd vermogen
+    elif p1_result[p1_result_slicer][0:9] == "1-0:2.8.1":
+        dalterug = float(p1_result[p1_result_slicer][10:16])
+
+    elif p1_result[p1_result_slicer][0:9] == "1-0:2.8.2":
+        piekterug = float(p1_result[p1_result_slicer][10:16])
+
+
+    meter = meter + daldag + piekdag - dalterug - piekterug
+    print(daldag, piekdag, dalterug, piekterug)
+    p1_result_slicer += 1
+
 #Close port and show status
 try:
     ser.close()
