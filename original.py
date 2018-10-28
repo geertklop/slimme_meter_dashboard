@@ -86,7 +86,9 @@ while True:
             value = b''.join(re.split(b'(\()', telegram_line)[1:])
             telegram_values[code] = value
 
-    print('Success2', telegram_values)
+            print(code, value)
+
+
 
 
     for code, value in sorted(telegram_values.items()):
