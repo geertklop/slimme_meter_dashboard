@@ -18,4 +18,4 @@ try:
 except:
     sys.exit ("Fout bij het openen van %s. Programma afgebroken."  % ser.name)
 
-print('You are awesome')
+print('Niels, Ik hou van je!')
