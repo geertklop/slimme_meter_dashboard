@@ -23,7 +23,9 @@ except:
 line_counter = 0
 p1_result = []
 
-print(ser.readLine())
+
+p1_line = str(ser.readLine())
+print(p1_line)
 
 # while line_counter < 26:
 #     p1_line = ''
