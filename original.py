@@ -86,18 +86,17 @@ while True:
             value = b''.join(re.split(b'(\()', telegram_line)[1:])
             telegram_values[code] = value
 
-            print(code, value)
-
 
 
 
     for code, value in sorted(telegram_values.items()):
         if code in list_of_interesting_codes:
             # Cleanup value
-            value = float(value.lstrip(b'\(').rstrip(r'\)*kWhA'))
+            clean_value = float(value.lstrip(b'\(').rstrip(r'\)*kWhA'))
             # Print nicely formatted string
 
-            print("{0:<63}{1:>12}".format(list_of_interesting_codes[code], value))
+            print(code, ': ', list_of_interesting_codes[code], ' - ', clean_value)
+
 
 
     break
