@@ -24,8 +24,19 @@ line_counter = 0
 p1_result = []
 
 
-p1_line = str(ser.readLine())
-print(p1_line)
+while line_counter < 26:
+    p1_line=''
+    try:
+        p1_raw = ser.readline()
+    except:
+        sys.exit ("Seriele poort %s kan niet gelezen worden. Aaaaaaaaarch." % ser.name )
+
+    p1_str = str(p1_raw)
+    p1_line = p1_str.strip()
+
+    p1_result.append(p1_line)
+    line_counter += 1
+    print(p1_result)
 
 #Close port and show status
 try:
