@@ -94,7 +94,7 @@ while True:
 
     #nicely print codes and convert to strings
     for code, value in sorted(telegram_values.items()):
-        code_string = code.decode('utf-8')
+        code_string = code.decode('utf-8').strip()
         if code_string in list_of_interesting_codes:
             # Cleanup value
             clean_value = float(value.lstrip(b'\(').rstrip(b'\)*kWhA'))
