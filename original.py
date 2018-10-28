@@ -93,8 +93,8 @@ while True:
         # Split the OBIS code from the value
         # The lines with a OBIS code start with a number
         if re.match(b'\d', telegram_line):
-            code = ''.join(re.split(b'(\()', telegram_line)[:1])
-            value = ''.join(re.split(b'(\()', telegram_line)[1:])
+            code = b''.join(re.split(b'(\()', telegram_line)[:1])
+            value = b''.join(re.split(b'(\()', telegram_line)[1:])
             telegram_values[code] = value
             print(telegram_values)
 
