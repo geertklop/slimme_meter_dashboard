@@ -90,13 +90,16 @@ while True:
 
     print('success')
 
+
+    #nicely print codes and convert to strings
     for code, value in sorted(telegram_values.items()):
-        if code.decode('utf-8') in list_of_interesting_codes:
+        code_string = code.decode('utf-8')
+        if code_string in list_of_interesting_codes:
             # Cleanup value
             clean_value = float(value.lstrip(b'\(').rstrip(b'\)*kWhA'))
             # Print nicely formatted string
 
-            print(code, ': ', list_of_interesting_codes[code], ' - ', clean_value)
+            print(code_string, ': ', list_of_interesting_codes[code_string], ' - ', clean_value)
 
 
 
