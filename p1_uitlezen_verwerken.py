@@ -27,22 +27,23 @@ verbruik1 = values_dict['1-0:1.8.1']
 verbruik2 = values_dict['1-0:1.8.2']
 terug1 = values_dict['1-0:2.8.1']
 terug2 = values_dict['1-0:2.8.2']
-verbruik_delta = 0
-terug_delta = 0
 
 #connect to db
 db = sqlite3.connect('../data/meterdata.db')
 cursor = db.cursor()
 
+# select
+cursor.execute('''SELECT * FROM table ORDER BY id DESC LIMIT 1''')
+
 # insert data
-cursor.execute('''INSERT INTO meterstanden(currentdate, verbruik1, verbruik2, terug1, terug2, verbruik_delta, terug_delta)
-                  VALUES(?,?,?,?,?,?,?)''', (currentdate,
-                                             verbruik1,
-                                             verbruik2,
-                                             terug1,
-                                             terug2,
-                                             verbruik_delta,
-                                             terug_delta))
-db.commit()
+# cursor.execute('''INSERT INTO meterstanden(currentdate, verbruik1, verbruik2, terug1, terug2, verbruik_delta, terug_delta)
+#                   VALUES(?,?,?,?,?,?,?)''', (currentdate,
+#                                              verbruik1,
+#                                              verbruik2,
+#                                              terug1,
+#                                              terug2,
+#                                              verbruik_delta,
+#                                              terug_delta))
+# db.commit()
 
 
