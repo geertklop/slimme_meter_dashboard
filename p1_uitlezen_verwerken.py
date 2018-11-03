@@ -14,7 +14,7 @@ list_of_interesting_codes = {
 }
 
 #get current date/time
-date = dt.datetime.now()
+currentdate = dt.datetime.now()
 
 # get current reading
 raw_telegram = read_telegram()
