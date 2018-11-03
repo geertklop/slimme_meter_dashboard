@@ -38,25 +38,26 @@ def read_telegram():
         sys.exit("Fout bij het openen van %s. Aaaaarch." % ser.name)
 
     checksum_found = False
-    telegram = b''
+    tel = b''
     while not checksum_found:
         # Read in a line
-        telegram_line = ser.readline()
+        tel_line = ser.readline()
 
         # End of telegram found or not
         if re.match(b'(?=!)', telegram_line):
             # print('')
-            telegram = telegram + telegram_line
+            tel = tel + tel_line
             checksum_found = True
         else:
-            telegram = telegram + telegram_line
+            tel = tel + tel_line
 
     ser.close()
 
-    return telegram
+    return tel
 
 
 telegram = read_telegram()
+print(telegram)
 
 telegram_values = dict()
 for telegram_line in telegram.split(b'\r\n'):
