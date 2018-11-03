@@ -66,7 +66,7 @@ checksum_found = False
 while not checksum_found:
     # Read in a line
     telegram_line = ser.readline()
-    # print(str(telegram_line))
+    print(str(telegram_line))
 
     if re.match(b'(?=!)', telegram_line):
         # print('')
@@ -76,7 +76,7 @@ while not checksum_found:
         telegram = telegram + telegram_line
 
 ser.close()
-print(telegram)
+
 
 telegram_values = dict()
 for telegram_line in telegram.split(b'\r\n'):
