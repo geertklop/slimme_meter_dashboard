@@ -76,7 +76,7 @@ while not checksum_found:
         telegram = telegram + telegram_line
 
 ser.close()
-
+print(telegram)
 
 telegram_values = dict()
 for telegram_line in telegram.split(b'\r\n'):
