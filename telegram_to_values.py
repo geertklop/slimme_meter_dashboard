@@ -42,6 +42,7 @@ def read_telegram():
     while not checksum_found:
         # Read in a line
         tel_line = ser.readline()
+        print(tel_line)
 
         # End of telegram found or not
         if re.match(b'(?=!)', tel_line):
@@ -57,7 +58,6 @@ def read_telegram():
 
 
 telegram = read_telegram()
-print(telegram)
 
 telegram_values = dict()
 for telegram_line in telegram.split(b'\r\n'):
@@ -67,6 +67,9 @@ for telegram_line in telegram.split(b'\r\n'):
         code = b''.join(re.split(b'(\()', telegram_line)[:1])
         value = b''.join(re.split(b'(\()', telegram_line)[1:])
         telegram_values[code] = value
+
+print('')
+print(telegram_values)
 
 #nicely print codes and convert to strings
 for code, value in telegram_values.items():
