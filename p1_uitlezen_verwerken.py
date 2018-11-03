@@ -33,7 +33,7 @@ db = sqlite3.connect('../data/meterdata.db')
 cursor = db.cursor()
 
 # select
-cursor.execute('''SELECT * FROM table ORDER BY id DESC LIMIT 1''')
+cursor.execute('''SELECT * FROM meterstanden ORDER BY id DESC LIMIT 1''')
 for row in cursor:
     verbruik1_last = row[2]
     verbruik2_last = row[3]
