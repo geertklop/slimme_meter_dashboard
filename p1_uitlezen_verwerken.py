@@ -34,16 +34,31 @@ cursor = db.cursor()
 
 # select
 cursor.execute('''SELECT * FROM table ORDER BY id DESC LIMIT 1''')
+for row in cursor:
+    verbruik1_last = row[2]
+    verbruik2_last = row[3]
+    terug1_last = row[4]
+    terug2_last = row[5]
+
+verbruik_delta = (verbruik1 - verbruik1_last) + (verbruik2 - verbruik2_last)
+terug_delta = (terug1 - terug1_last) + (terug2 - terug2_last)
 
 # insert data
-# cursor.execute('''INSERT INTO meterstanden(currentdate, verbruik1, verbruik2, terug1, terug2, verbruik_delta, terug_delta)
-#                   VALUES(?,?,?,?,?,?,?)''', (currentdate,
-#                                              verbruik1,
-#                                              verbruik2,
-#                                              terug1,
-#                                              terug2,
-#                                              verbruik_delta,
-#                                              terug_delta))
-# db.commit()
+query = """
+        INSERT INTO meterstanden(currentdate, verbruik1, verbruik2, terug1, terug2, verbruik_delta, terug_delta)
+        VALUES(?,?,?,?,?,?,?)
+        """
+
+cursor.execute(query, (currentdate,
+                       verbruik1,
+                       verbruik2,
+                       terug1,
+                       terug2,
+                       verbruik_delta,
+                       terug_delta))
+
+db.commit()
+db.close()
+
 
 
