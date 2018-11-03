@@ -75,5 +75,5 @@ for code, value in telegram_values.items():
         clean_value = float(value.lstrip(b'\(').rstrip(b'\)*kWhA'))
         # Print nicely formatted string
 
-        # print(code_string, ': ', list_of_interesting_codes[code_string], ' - ', clean_value)
+        print(code_string, ': ', list_of_interesting_codes[code_string], ' - ', clean_value)
 
