@@ -71,7 +71,7 @@ def telegram_to_dict(telegram_raw):
 
 
 #nicely print codes and convert to strings
-def extract_interesting_codes(telegram_dict, codes = list_of_interesting_codes):
+def extract_interesting_codes(telegram_dict, codes):
     """
     Extract interesting values from telegram_dict and convert to numbers
     :param telegram_dict: dict of telegram
