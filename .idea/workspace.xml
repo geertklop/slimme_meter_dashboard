@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7764a3d0-545c-48d8-b638-d5e2e05a74cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/interesting_codes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/original.py" beforeDir="false" afterPath="$PROJECT_DIR$/original.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram_to_values.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_to_values.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,15 +40,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1791" />
-          <entry key="txt" value="140" />
+          <entry key="dummy" value="18" />
+          <entry key="py" value="1940" />
+          <entry key="txt" value="162" />
           <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="140" />
-          <entry key="Python" value="1791" />
+          <entry key="PLAIN_TEXT" value="180" />
+          <entry key="Python" value="1940" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -70,12 +70,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/original.py">
+        <entry file="file://$PROJECT_DIR$/telegram_to_values.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="303">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#98#108#0" expanded="true" />
+                <marker date="1541236917621" expanded="true" signature="594:620" ph="..." />
               </folding>
             </state>
           </provider>
@@ -108,6 +109,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pattern</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -121,6 +127,7 @@
         <option value="$PROJECT_DIR$/params.yaml" />
         <option value="$PROJECT_DIR$/interesting_codes.txt" />
         <option value="$PROJECT_DIR$/original.py" />
+        <option value="$PROJECT_DIR$/telegram_to_values.py" />
       </list>
     </option>
   </component>
@@ -203,20 +210,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added serial config">
-      <created>1540726268629</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1540726268629</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added serial config">
-      <created>1540726287271</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1540726287271</updated>
     </task>
     <task id="LOCAL-00004" summary="added serial config">
       <created>1540730491012</created>
@@ -547,7 +540,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541235907135</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="reduced interesting codes">
+      <created>1541236444112</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1541236444112</updated>
+    </task>
+    <task id="LOCAL-00052" summary="script into functions">
+      <created>1541236828374</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1541236828374</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -590,7 +597,8 @@
     <MESSAGE value="added original file from fork" />
     <MESSAGE value="edited original script" />
     <MESSAGE value="reduced interesting codes" />
-    <option name="LAST_COMMIT_MESSAGE" value="reduced interesting codes" />
+    <MESSAGE value="script into functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="script into functions" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -625,12 +633,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/original.py">
+    <entry file="file://$PROJECT_DIR$/telegram_to_values.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="303">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="e#98#108#0" expanded="true" />
+            <marker date="1541236917621" expanded="true" signature="594:620" ph="..." />
           </folding>
         </state>
       </provider>

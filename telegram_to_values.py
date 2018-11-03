@@ -42,8 +42,8 @@ def read_telegram():
     while not checksum_found:
         # Read in a line
         telegram_line = ser.readline()
-        print(str(telegram_line))
 
+        # End of telegram found or not
         if re.match(b'(?=!)', telegram_line):
             # print('')
             telegram = telegram + telegram_line
@@ -51,7 +51,6 @@ def read_telegram():
         else:
             telegram = telegram + telegram_line
 
-    print(telegram)
     ser.close()
 
     return telegram
@@ -76,5 +75,5 @@ for code, value in telegram_values.items():
         clean_value = float(value.lstrip(b'\(').rstrip(b'\)*kWhA'))
         # Print nicely formatted string
 
-        print(code_string, ': ', list_of_interesting_codes[code_string], ' - ', clean_value)
+        # print(code_string, ': ', list_of_interesting_codes[code_string], ' - ', clean_value)
 
