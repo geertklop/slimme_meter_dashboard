@@ -9,6 +9,11 @@ list_of_interesting_codes = {
     '1-0:2.8.2': 'total_deliverd_2',
 }
 
+pattern = re.compile(b'\r\n(?=!)')
+
+good_checksum = False
+
+
 def port_config():
 #Set COM port config
     ser = serial.Serial()
@@ -23,38 +28,36 @@ def port_config():
 
     return ser
 
-print(port_config())
+
+def read_telegram():
+    ser = port_config()
+
+    try:
+        ser.open()
+    except:
+        sys.exit("Fout bij het openen van %s. Aaaaarch." % ser.name)
+
+    checksum_found = False
+    telegram = b''
+    while not checksum_found:
+        # Read in a line
+        telegram_line = ser.readline()
+        print(str(telegram_line))
+
+        if re.match(b'(?=!)', telegram_line):
+            # print('')
+            telegram = telegram + telegram_line
+            checksum_found = True
+        else:
+            telegram = telegram + telegram_line
+
+    print(telegram)
+    ser.close()
+
+    return telegram
 
 
-pattern = re.compile(b'\r\n(?=!)')
-
-telegram = b''
-checksum_found = False
-good_checksum = False
-
-
-try:
-    ser.open()
-except:
-    sys.exit("Fout bij het openen van %s. Aaaaarch." % ser.name)
-
-telegram = b''
-checksum_found = False
-
-while not checksum_found:
-    # Read in a line
-    telegram_line = ser.readline()
-    print(str(telegram_line))
-
-    if re.match(b'(?=!)', telegram_line):
-        # print('')
-        telegram = telegram + telegram_line
-        checksum_found = True
-    else:
-        telegram = telegram + telegram_line
-
-ser.close()
-
+telegram = read_telegram()
 
 telegram_values = dict()
 for telegram_line in telegram.split(b'\r\n'):
