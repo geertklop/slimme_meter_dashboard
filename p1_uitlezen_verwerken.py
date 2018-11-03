@@ -11,7 +11,7 @@ list_of_interesting_codes = {
 }
 
 raw_telegram = read_telegram()
-telegram_dict = telegram_dict(raw_telegram)
+telegram_dict = telegram_to_dict(raw_telegram)
 values_dict = extract_interesting_codes(telegram_dict,
                                         list_of_interesting_codes
                                         )
