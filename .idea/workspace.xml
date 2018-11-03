@@ -41,7 +41,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="18" />
-          <entry key="py" value="1940" />
+          <entry key="py" value="2012" />
           <entry key="txt" value="162" />
           <entry key="yaml" value="3" />
         </counts>
@@ -49,7 +49,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="180" />
-          <entry key="Python" value="1940" />
+          <entry key="Python" value="2012" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -72,11 +72,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/telegram_to_values.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="237">
+              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
               <folding>
                 <element signature="e#98#108#0" expanded="true" />
-                <marker date="1541236917621" expanded="true" signature="594:620" ph="..." />
+                <marker date="1541237108089" expanded="true" signature="594:620" ph="..." />
               </folding>
             </state>
           </provider>
@@ -210,27 +210,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added serial config">
-      <created>1540730491012</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1540730491012</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added serial config">
-      <created>1540730623116</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1540730623116</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added serial config">
-      <created>1540733947551</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1540733947551</updated>
     </task>
     <task id="LOCAL-00007" summary="added serial config">
       <created>1540734072368</created>
@@ -554,7 +533,28 @@
       <option name="project" value="LOCAL" />
       <updated>1541236828374</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="script into functions">
+      <created>1541236919938</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1541236919938</updated>
+    </task>
+    <task id="LOCAL-00054" summary="script into functions">
+      <created>1541236942897</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1541236942897</updated>
+    </task>
+    <task id="LOCAL-00055" summary="script into functions">
+      <created>1541237075059</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1541237075059</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -635,11 +635,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/telegram_to_values.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="237">
+          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
           <folding>
             <element signature="e#98#108#0" expanded="true" />
-            <marker date="1541236917621" expanded="true" signature="594:620" ph="..." />
+            <marker date="1541237108089" expanded="true" signature="594:620" ph="..." />
           </folding>
         </state>
       </provider>

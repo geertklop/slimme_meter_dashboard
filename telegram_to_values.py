@@ -44,7 +44,7 @@ def read_telegram():
         tel_line = ser.readline()
 
         # End of telegram found or not
-        if re.match(b'(?=!)', telegram_line):
+        if re.match(b'(?=!)', tel_line):
             # print('')
             tel = tel + tel_line
             checksum_found = True
