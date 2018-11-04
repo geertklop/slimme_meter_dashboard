@@ -57,7 +57,7 @@ def update_daily_total(n):
     data = verbruik_dag.merge(terug_dag, how='left', on='currentdate')
 
     traces = []
-    for i in ['verbruik_dag', 'terug_dag']:
+    for i in ['verbruik_delta', 'terug_delta']:
         traces.append(go.Bar(
             x=data['currentdate'],
             y=df[i],
