@@ -16,6 +16,7 @@ list_of_interesting_codes = {
 }
 
 while True:
+    start_time = time.time()
     currentdate = dt.datetime.now()
 
     # get current reading
@@ -62,7 +63,10 @@ while True:
 
     db.commit()
     db.close()
-    print(currentdate, 'successful run')
+
+    end_time = time.time()
+    print(currentdate, end_time - start_time, 'successful run')
+
 
     time.sleep(300)
 
