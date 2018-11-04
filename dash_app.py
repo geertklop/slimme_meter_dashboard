@@ -23,7 +23,7 @@ app.Layout = html.Div(
     ])
 )
 
-@app.callback(Output('live-update-text', 'children'),
+@app.callback(Output('live-update-graph', 'figure'),
               [Input('interval-component', 'n_intervals')])
 def update_graph(n):
     current_year = datetime.datetime.now().month
@@ -43,7 +43,8 @@ def update_graph(n):
             x = df['currentdate'],
             y = df[i],
             text = df[i],
-            mode='lines'
+            mode= 'lines',
+            name= i
         ))
 
     return {'data': traces,

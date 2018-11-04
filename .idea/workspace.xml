@@ -42,15 +42,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="py" value="6161" />
-          <entry key="txt" value="188" />
+          <entry key="py" value="6171" />
+          <entry key="txt" value="210" />
           <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="224" />
-          <entry key="Python" value="6161" />
+          <entry key="PLAIN_TEXT" value="246" />
+          <entry key="Python" value="6171" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -106,11 +106,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+            <state relative-caret-position="348">
+              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1541344852943" expanded="true" signature="1027:1733" ph="..." />
+                <marker date="1541344936469" expanded="true" signature="1027:1755" ph="..." />
               </folding>
             </state>
           </provider>
@@ -237,13 +237,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00050" summary="reduced interesting codes">
-      <created>1541235907134</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1541235907135</updated>
     </task>
     <task id="LOCAL-00051" summary="reduced interesting codes">
       <created>1541236444112</created>
@@ -581,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541342396624</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="created basic Dash app">
+      <created>1541344865607</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1541344865607</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TodoView">
@@ -626,7 +626,8 @@
     <MESSAGE value="reduced interesting codes" />
     <MESSAGE value="script into functions" />
     <MESSAGE value="added sqlite into script" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sqlite into script" />
+    <MESSAGE value="created basic Dash app" />
+    <option name="LAST_COMMIT_MESSAGE" value="created basic Dash app" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/params.yaml" />
@@ -679,11 +680,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dash_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+        <state relative-caret-position="348">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1541344852943" expanded="true" signature="1027:1733" ph="..." />
+            <marker date="1541344936469" expanded="true" signature="1027:1755" ph="..." />
           </folding>
         </state>
       </provider>
