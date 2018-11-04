@@ -32,7 +32,7 @@ terug2 = values_dict['1-0:2.8.2']
 db = sqlite3.connect('../data/meterdata.db')
 cursor = db.cursor()
 
-# select
+# select last row
 cursor.execute('''SELECT * FROM meterstanden ORDER BY id DESC LIMIT 1''')
 for row in cursor:
     verbruik1_last = row[2]
@@ -40,10 +40,11 @@ for row in cursor:
     terug1_last = row[4]
     terug2_last = row[5]
 
+# calculate deltas
 verbruik_delta = (verbruik1 - verbruik1_last) + (verbruik2 - verbruik2_last)
 terug_delta = (terug1 - terug1_last) + (terug2 - terug2_last)
 
-# insert data
+# insert new data into table
 query = """
         INSERT INTO meterstanden(currentdate, verbruik1, verbruik2, terug1, terug2, verbruik_delta, terug_delta)
         VALUES(?,?,?,?,?,?,?)
