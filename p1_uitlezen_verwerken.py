@@ -75,6 +75,7 @@ def main_loop():
 
             time.sleep(300 - run_time)
         except KeyError:
+            print('Meting mislukt...')
             continue
 
 if __name__ == '__main__':

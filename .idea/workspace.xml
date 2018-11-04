@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7764a3d0-545c-48d8-b638-d5e2e05a74cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dash_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p1_uitlezen_verwerken.py" beforeDir="false" afterPath="$PROJECT_DIR$/p1_uitlezen_verwerken.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
         <counts>
           <entry key="dummy" value="36" />
           <entry key="md" value="353" />
-          <entry key="py" value="7198" />
+          <entry key="py" value="7313" />
           <entry key="txt" value="210" />
           <entry key="yaml" value="3" />
         </counts>
@@ -51,7 +52,7 @@
         <counts>
           <entry key="Markdown" value="353" />
           <entry key="PLAIN_TEXT" value="246" />
-          <entry key="Python" value="7198" />
+          <entry key="Python" value="7313" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -59,14 +60,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/p1_uitlezen_verwerken.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18">
-              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="290">
+              <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
               <folding>
                 <element signature="e#2#12#0" expanded="true" />
-                <marker date="1541360735116" expanded="true" signature="118:119" ph="..." />
+                <marker date="1541363333552" expanded="true" signature="118:119" ph="..." />
               </folding>
             </state>
           </provider>
@@ -97,14 +98,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dash_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+            <state relative-caret-position="294">
+              <caret line="101" column="53" selection-start-line="101" selection-start-column="53" selection-end-line="101" selection-end-column="53" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1541362845859" expanded="true" signature="1258:3382" ph="..." />
+                <marker date="1541363207920" expanded="true" signature="1258:3459" ph="..." />
               </folding>
             </state>
           </provider>
@@ -143,8 +144,8 @@
         <option value="$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py" />
         <option value="$PROJECT_DIR$/wsgi.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/p1_uitlezen_verwerken.py" />
         <option value="$PROJECT_DIR$/dash_app.py" />
+        <option value="$PROJECT_DIR$/p1_uitlezen_verwerken.py" />
       </list>
     </option>
   </component>
@@ -233,27 +234,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00081" summary="added sqlite into script">
-      <created>1541337971777</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1541337971777</updated>
-    </task>
-    <task id="LOCAL-00082" summary="added sqlite into script">
-      <created>1541338069331</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1541338069331</updated>
-    </task>
-    <task id="LOCAL-00083" summary="added sqlite into script">
-      <created>1541338278561</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1541338278561</updated>
     </task>
     <task id="LOCAL-00084" summary="added sqlite into script">
       <created>1541338307020</created>
@@ -577,7 +557,28 @@
       <option name="project" value="LOCAL" />
       <updated>1541362834239</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="created basic Dash app">
+      <created>1541362956254</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1541362956254</updated>
+    </task>
+    <task id="LOCAL-00131" summary="created basic Dash app">
+      <created>1541363018218</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1541363018218</updated>
+    </task>
+    <task id="LOCAL-00132" summary="created basic Dash app">
+      <created>1541363210516</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1541363210516</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TodoView">
@@ -672,24 +673,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p1_uitlezen_verwerken.py">
+    <entry file="file://$PROJECT_DIR$/dash_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="294">
+          <caret line="101" column="53" selection-start-line="101" selection-start-column="53" selection-end-line="101" selection-end-column="53" />
           <folding>
-            <element signature="e#2#12#0" expanded="true" />
-            <marker date="1541360735116" expanded="true" signature="118:119" ph="..." />
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1541363207920" expanded="true" signature="1258:3459" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dash_app.py">
+    <entry file="file://$PROJECT_DIR$/p1_uitlezen_verwerken.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+        <state relative-caret-position="290">
+          <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1541362845859" expanded="true" signature="1258:3382" ph="..." />
+            <element signature="e#2#12#0" expanded="true" />
+            <marker date="1541363333552" expanded="true" signature="118:119" ph="..." />
           </folding>
         </state>
       </provider>
