@@ -51,7 +51,7 @@ def update_daily_total(n):
     print(df.currentdate)
 
     #grab minimum values of day
-    verbruik_dag = df.groupby(df.currendate)['verbruik_delta'].sum().reset_index()
+    verbruik_dag = df.groupby(df.currentdate)['verbruik_delta'].sum().reset_index()
     terug_dag = df.groupby(df.currentdate)['terug_delta'].sum().reset_index()
 
     data = verbruik_dag.merge(terug_dag, how='left', on='currentdate')
