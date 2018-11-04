@@ -66,7 +66,7 @@ def main_loop():
 
         end_time = time.time()
         run_time = end_time - start_time
-        print(currentdate, run_time, 'successful run')
+        # print(currentdate, run_time, 'successful run')
 
 
         time.sleep(300 - run_time)
