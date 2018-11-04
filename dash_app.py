@@ -18,7 +18,7 @@ app.layout = html.Div(
         dcc.Graph(id='live-update-graph'),
         dcc.Interval(
             id='interval-component',
-            interval = 5000,
+            interval = 300000,
             n_intervals = 0
         )
     ])
