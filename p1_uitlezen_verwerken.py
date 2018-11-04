@@ -12,7 +12,7 @@ list_of_interesting_codes = {
     '1-0:1.8.1': 'total_received_1',
     '1-0:1.8.2': 'total_received_2',
     '1-0:2.8.1': 'total_delivered_1',
-    '1-0:2.8.2': 'total_delivered   _2',
+    '1-0:2.8.2': 'total_delivered_2',
 }
 def main_loop():
     while True:
@@ -48,6 +48,7 @@ def main_loop():
 
             # calculate deltas
             verbruik_delta = (verbruik1 - verbruik1_last) + (verbruik2 - verbruik2_last)
+
             terug_delta = (terug1 - terug1_last) + (terug2 - terug2_last)
 
             # insert new data into table
