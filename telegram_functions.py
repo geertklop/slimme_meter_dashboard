@@ -35,6 +35,7 @@ def read_telegram():
     while not checksum_found:
         # Read in a line
         tel_line = ser.readline()
+        print(tel_line)
         # print(tel_line)
 
         # End of telegram found or not
