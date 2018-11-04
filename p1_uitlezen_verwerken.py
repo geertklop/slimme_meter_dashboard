@@ -41,8 +41,8 @@ for row in cursor:
     terug1_last = row[4]
     terug2_last = row[5]
 
-verbruik_delta = (verbruik1 - 0) + (verbruik2 - 0)
-terug_delta = (terug1 - 0) + (terug2 - 0)
+verbruik_delta = 0
+terug_delta = 0
 
 # insert data
 query = """
