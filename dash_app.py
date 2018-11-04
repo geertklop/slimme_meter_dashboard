@@ -65,6 +65,7 @@ def update_daily_total(n):
 
     return {'data': traces,
             'layout': go.Layout(
+                title='Verbruik in kWh per dag',
                 barmode='group',
                 xaxis=dict(title=''),
                 yaxis=dict(title='verbruik in kWh')
@@ -98,6 +99,7 @@ def update_graph(n):
 
     return {'data': traces,
             'layout': go.Layout(
+                title='Verbuik in kWh per 5 minuten',
                 xaxis=dict(title=''),
                 yaxis=dict(title='verbruik in kWh'),
                 hovermode='closest'
