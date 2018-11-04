@@ -25,9 +25,9 @@ def read_and_extract_data():
     terug1 = values_dict['1-0:2.8.1']
     terug2 = values_dict['1-0:2.8.2']
 
-    return currentdate, verbruik1, verbruik2, verbruik2, terug1, terug2
+    return currentdate, verbruik1, verbruik2, terug1, terug2
 
-def data_to_sqlite(currentdate, verbruik1, verbruik2, verbruik2, terug1, terug2):
+def data_to_sqlite(currentdate, verbruik1, verbruik2, terug1, terug2):
     #connect to db
     db = sqlite3.connect('/home/gklop/slimme_meter_project/data/meterdata.db')
     cursor = db.cursor()
