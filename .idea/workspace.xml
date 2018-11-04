@@ -4,6 +4,7 @@
     <list default="true" id="7764a3d0-545c-48d8-b638-d5e2e05a74cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dash_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="py" value="6442" />
+          <entry key="py" value="6481" />
           <entry key="txt" value="210" />
           <entry key="yaml" value="3" />
         </counts>
@@ -50,7 +51,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="246" />
-          <entry key="Python" value="6442" />
+          <entry key="Python" value="6481" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -81,24 +82,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="175">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1541348405877" expanded="true" signature="1125:1836" ph="..." />
+                <marker date="1541349148357" expanded="true" signature="1132:1854" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -225,20 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00063" summary="added sqlite into script">
-      <created>1541251530891</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1541251530892</updated>
-    </task>
-    <task id="LOCAL-00064" summary="added sqlite into script">
-      <created>1541251594421</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1541251594421</updated>
     </task>
     <task id="LOCAL-00065" summary="added sqlite into script">
       <created>1541252402767</created>
@@ -569,7 +556,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541348377985</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="created basic Dash app">
+      <created>1541348411080</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1541348411080</updated>
+    </task>
+    <task id="LOCAL-00113" summary="created basic Dash app">
+      <created>1541348670869</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1541348670869</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TodoView">
@@ -666,21 +667,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dash_app.py">
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1541348405877" expanded="true" signature="1125:1836" ph="..." />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/dash_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="175">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1541349148357" expanded="true" signature="1132:1854" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
