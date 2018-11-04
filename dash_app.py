@@ -47,7 +47,6 @@ def update_daily_total(n):
     df = pd.read_sql_query("select * from meterstanden where currentdate >= '{}';".format(first_of_month), db)
 
     df['currentdate'] = pd.to_datetime(df['currentdate']).dt.date
-    print(df.currentdate)
 
     #grab minimum values of day
     verbruik_dag = df.groupby(df.currentdate)['verbruik_delta'].sum().reset_index()
