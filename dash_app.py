@@ -46,11 +46,13 @@ def update_daily_total(n):
     db = sqlite3.connect('/home/gklop/slimme_meter_project/data/meterdata.db')
     df = pd.read_sql_query("select * from meterstanden where currentdate >= '{}';".format(first_of_month), db)
 
-    df['currentdate'] = pd.to_datetime(df['currentdate'])
+    df['currentdate'] = pd.to_datetime(df['currentdate']).dt.date()
+    print(df.dtypes)
+    print(df.currentdate)
 
     #grab minimum values of day
-    verbruik_dag = df.groupby(df['currentdate'].dt.date())['verbruik_delta'].sum().reset_index()
-    terug_dag = df.groupby(df['currentdate'].dt.date())['terug_delta'].sum().reset_index()
+    verbruik_dag = df.groupby(df.currendate)['verbruik_delta'].sum().reset_index()
+    terug_dag = df.groupby(df.currentdate)['terug_delta'].sum().reset_index()
 
     data = verbruik_dag.merge(terug_dag, how='left', on='currentdate')
 

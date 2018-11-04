@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7764a3d0-545c-48d8-b638-d5e2e05a74cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dash_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +43,7 @@
         <counts>
           <entry key="dummy" value="36" />
           <entry key="md" value="353" />
-          <entry key="py" value="6994" />
+          <entry key="py" value="7148" />
           <entry key="txt" value="210" />
           <entry key="yaml" value="3" />
         </counts>
@@ -51,7 +52,7 @@
         <counts>
           <entry key="Markdown" value="353" />
           <entry key="PLAIN_TEXT" value="246" />
-          <entry key="Python" value="6994" />
+          <entry key="Python" value="7148" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -100,11 +101,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+            <state relative-caret-position="297">
+              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1541361849121" expanded="true" signature="1258:3354" ph="..." />
+                <marker date="1541362328984" expanded="true" signature="1258:3421" ph="..." />
               </folding>
             </state>
           </provider>
@@ -233,27 +234,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00072" summary="added sqlite into script">
-      <created>1541329498389</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1541329498389</updated>
-    </task>
-    <task id="LOCAL-00073" summary="added sqlite into script">
-      <created>1541329543256</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1541329543256</updated>
-    </task>
-    <task id="LOCAL-00074" summary="added sqlite into script">
-      <created>1541329569442</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1541329569442</updated>
     </task>
     <task id="LOCAL-00075" summary="added sqlite into script">
       <created>1541329591979</created>
@@ -577,7 +557,28 @@
       <option name="project" value="LOCAL" />
       <updated>1541361718861</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="created basic Dash app">
+      <created>1541361851241</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1541361851241</updated>
+    </task>
+    <task id="LOCAL-00122" summary="created basic Dash app">
+      <created>1541362044811</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1541362044811</updated>
+    </task>
+    <task id="LOCAL-00123" summary="created basic Dash app">
+      <created>1541362167329</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1541362167329</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TodoView">
@@ -685,11 +686,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dash_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+        <state relative-caret-position="297">
+          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1541361849121" expanded="true" signature="1258:3354" ph="..." />
+            <marker date="1541362328984" expanded="true" signature="1258:3421" ph="..." />
           </folding>
         </state>
       </provider>
