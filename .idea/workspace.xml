@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7764a3d0-545c-48d8-b638-d5e2e05a74cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py" beforeDir="false" afterPath="$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +41,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="py" value="4651" />
+          <entry key="py" value="4652" />
           <entry key="txt" value="188" />
           <entry key="yaml" value="3" />
         </counts>
@@ -50,7 +49,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="224" />
-          <entry key="Python" value="4651" />
+          <entry key="Python" value="4652" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -61,11 +60,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+            <state relative-caret-position="554">
+              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-                <marker date="1541338596920" expanded="true" signature="71:101" ph="..." />
+                <marker date="1541338655076" expanded="true" signature="71:101" ph="..." />
               </folding>
             </state>
           </provider>
@@ -246,13 +245,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00039" summary="edited original script">
-      <created>1540757044507</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1540757044507</updated>
     </task>
     <task id="LOCAL-00040" summary="edited original script">
       <created>1540757132702</created>
@@ -590,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541338556064</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="added sqlite into script">
+      <created>1541338599253</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1541338599253</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TodoView">
@@ -686,11 +685,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        <state relative-caret-position="554">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1541338596920" expanded="true" signature="71:101" ph="..." />
+            <marker date="1541338655076" expanded="true" signature="71:101" ph="..." />
           </folding>
         </state>
       </provider>
