@@ -1,3 +1,7 @@
+import sys
+import serial
+import re
+import time
 import datetime as dt
 import sqlite3
 from telegram_functions import *
@@ -8,52 +12,59 @@ list_of_interesting_codes = {
     '1-0:1.8.1': 'total_received_1',
     '1-0:1.8.2': 'total_received_2',
     '1-0:2.8.1': 'total_delivered_1',
-    '1-0:2.8.2': 'total_delivered_2',
+    '1-0:2.8.2': 'total_delivered   _2',
 }
-currentdate = dt.datetime.now()
 
-# get current reading
-raw_telegram = read_telegram()
-telegram_dict = telegram_to_dict(raw_telegram)
-values_dict = extract_interesting_codes(telegram_dict,
-                                        list_of_interesting_codes
-                                        )
+while True:
+    currentdate = dt.datetime.now()
 
-verbruik1 = values_dict['1-0:1.8.1']
-verbruik2 = values_dict['1-0:1.8.2']
-terug1 = values_dict['1-0:2.8.1']
-terug2 = values_dict['1-0:2.8.2']
+    # get current reading
+    raw_telegram = read_telegram()
+    telegram_dict = telegram_to_dict(raw_telegram)
+    values_dict = extract_interesting_codes(telegram_dict,
+                                            list_of_interesting_codes
+                                            )
 
-#connect to db
-db = sqlite3.connect('/home/gklop/slimme_meter_project/data/meterdata.db')
-cursor = db.cursor()
+    verbruik1 = values_dict['1-0:1.8.1']
+    verbruik2 = values_dict['1-0:1.8.2']
+    terug1 = values_dict['1-0:2.8.1']
+    terug2 = values_dict['1-0:2.8.2']
 
-# select last row
-cursor.execute('''SELECT * FROM meterstanden ORDER BY id DESC LIMIT 1''')
-for row in cursor:
-    verbruik1_last = row[2]
-    verbruik2_last = row[3]
-    terug1_last = row[4]
-    terug2_last = row[5]
+    #connect to db
+    db = sqlite3.connect('/home/gklop/slimme_meter_project/data/meterdata.db')
+    cursor = db.cursor()
 
-# calculate deltas
-verbruik_delta = (verbruik1 - verbruik1_last) + (verbruik2 - verbruik2_last)
-terug_delta = (terug1 - terug1_last) + (terug2 - terug2_last)
+    # select last row
+    cursor.execute('''SELECT * FROM meterstanden ORDER BY id DESC LIMIT 1''')
+    for row in cursor:
+        verbruik1_last = row[2]
+        verbruik2_last = row[3]
+        terug1_last = row[4]
+        terug2_last = row[5]
 
-# insert new data into table
-query = """
-        INSERT INTO meterstanden(currentdate, verbruik1, verbruik2, terug1, terug2, verbruik_delta, terug_delta)
-        VALUES(?,?,?,?,?,?,?)
-        """
+    # calculate deltas
+    verbruik_delta = (verbruik1 - verbruik1_last) + (verbruik2 - verbruik2_last)
+    terug_delta = (terug1 - terug1_last) + (terug2 - terug2_last)
 
-cursor.execute(query, (currentdate,
-                       verbruik1,
-                       verbruik2,
-                       terug1,
-                       terug2,
-                       verbruik_delta,
-                       terug_delta))
+    # insert new data into table
+    query = """
+            INSERT INTO meterstanden(currentdate, verbruik1, verbruik2, terug1, terug2, verbruik_delta, terug_delta)
+            VALUES(?,?,?,?,?,?,?)
+            """
 
-db.commit()
-db.close()
+    cursor.execute(query, (currentdate,
+                           verbruik1,
+                           verbruik2,
+                           terug1,
+                           terug2,
+                           verbruik_delta,
+                           terug_delta))
+
+    db.commit()
+    db.close()
+    print(currentdate, 'successful run')
+
+    time.sleep(300)
+
+
 
