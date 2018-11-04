@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7764a3d0-545c-48d8-b638-d5e2e05a74cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/airflow_dag.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p1_uitlezen_verwerken.py" beforeDir="false" afterPath="$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/reader_functions/telegram_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py" beforeDir="false" afterPath="$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +42,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="py" value="4607" />
+          <entry key="py" value="4632" />
           <entry key="txt" value="188" />
           <entry key="yaml" value="3" />
         </counts>
@@ -52,7 +50,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="224" />
-          <entry key="Python" value="4607" />
+          <entry key="Python" value="4632" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -60,25 +58,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="569">
+              <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-                <marker date="1541337965977" expanded="true" signature="88:118" ph="..." />
-                <marker date="1541337965977" expanded="true" signature="1989:1994" ph="..." />
+                <marker date="1541338303673" expanded="true" signature="88:118" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/airflow_dag.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -99,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reader_functions/telegram_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
+            <state relative-caret-position="59">
               <caret line="57" column="7" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
               <folding>
                 <marker date="1541329436256" expanded="true" signature="457:483" ph="..." />
@@ -160,8 +157,8 @@
         <option value="$PROJECT_DIR$/telegram_functions.py" />
         <option value="$PROJECT_DIR$/dash_app.py" />
         <option value="$PROJECT_DIR$/p1_uitlezen_verwerken.py" />
-        <option value="$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py" />
         <option value="$PROJECT_DIR$/airflow_dag.py" />
+        <option value="$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py" />
       </list>
     </option>
   </component>
@@ -249,27 +246,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00032" summary="edited original script">
-      <created>1540756324534</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1540756324534</updated>
-    </task>
-    <task id="LOCAL-00033" summary="edited original script">
-      <created>1540756355261</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1540756355261</updated>
-    </task>
-    <task id="LOCAL-00034" summary="edited original script">
-      <created>1540756478619</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1540756478619</updated>
     </task>
     <task id="LOCAL-00035" summary="edited original script">
       <created>1540756749677</created>
@@ -593,7 +569,28 @@
       <option name="project" value="LOCAL" />
       <updated>1541332874782</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="added sqlite into script">
+      <created>1541337971777</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1541337971777</updated>
+    </task>
+    <task id="LOCAL-00082" summary="added sqlite into script">
+      <created>1541338069331</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1541338069331</updated>
+    </task>
+    <task id="LOCAL-00083" summary="added sqlite into script">
+      <created>1541338278561</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1541338278561</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TodoView">
@@ -669,7 +666,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/reader_functions/telegram_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
+        <state relative-caret-position="59">
           <caret line="57" column="7" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
           <folding>
             <marker date="1541329436256" expanded="true" signature="457:483" ph="..." />
@@ -677,24 +674,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py">
+    <entry file="file://$PROJECT_DIR$/airflow_dag.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1541337965977" expanded="true" signature="88:118" ph="..." />
-            <marker date="1541337965977" expanded="true" signature="1989:1994" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/airflow_dag.py">
+    <entry file="file://$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="569">
+          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+            <marker date="1541338303673" expanded="true" signature="88:118" ph="..." />
           </folding>
         </state>
       </provider>
