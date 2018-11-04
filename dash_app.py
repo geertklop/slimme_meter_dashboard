@@ -7,10 +7,19 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 
+# Modify these variables with your own info
+APP_NAME = 'Energiemeter'
+APP_URL = 'http://192.168.40.23:8050'
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+auth = dash_auth.PlotlyAuth(
+    app,
+    APP_NAME,
+    'private',
+    APP_URL
+)
 
 app.layout = html.Div(
     html.Div([
@@ -57,9 +66,10 @@ def update_graph(n):
             )
     }
 
+app.scripts.config.serve_locally = True
+
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0'
-                   )
+    app.run_server(host='0.0.0.0')
 
 
 
