@@ -2,7 +2,6 @@ import pandas as pd
 import datetime
 import sqlite3
 import dash
-import dash_auth
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
@@ -60,7 +59,6 @@ def update_graph(n):
             )
     }
 
-app.scripts.config.serve_locally = True
 
 if __name__ == '__main__':
     server.run(host='0.0.0.0')
