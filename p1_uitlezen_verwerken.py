@@ -65,10 +65,11 @@ while True:
     db.close()
 
     end_time = time.time()
-    print(currentdate, end_time - start_time, 'successful run')
+    run_time = end_time - start_time
+    print(currentdate, run_time, 'successful run')
 
 
-    time.sleep(300)
+    time.sleep(300 - run_time)
 
 
 
