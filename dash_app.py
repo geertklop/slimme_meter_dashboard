@@ -47,7 +47,6 @@ def update_daily_total(n):
     df = pd.read_sql_query("select * from meterstanden where currentdate >= '{}';".format(first_of_month), db)
 
     df['currentdate'] = pd.to_datetime(df['currentdate']).dt.date
-    print(df.dtypes)
     print(df.currentdate)
 
     #grab minimum values of day
@@ -56,12 +55,13 @@ def update_daily_total(n):
 
     data = verbruik_dag.merge(terug_dag, how='left', on='currentdate')
 
+
     traces = []
     for i in ['verbruik_delta', 'terug_delta']:
         traces.append(go.Bar(
             x=data['currentdate'],
-            y=df[i],
-            text=df[i],
+            y=data[i],
+            text=data[i],
             name=i
         ))
 
