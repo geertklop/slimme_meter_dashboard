@@ -12,7 +12,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-app.Layout = html.Div(
+app.layout = html.Div(
     html.Div([
         html.H2('Energieverbuik per 5 minuten'),
         dcc.Graph(id='live-update-graph'),
