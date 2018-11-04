@@ -28,7 +28,7 @@ app.layout = html.Div(
 @app.callback(Output('live-update-graph', 'figure'),
               [Input('interval-component', 'n_intervals')])
 def update_graph(n):
-    current_year = datetime.datetime.now().month
+    current_year = datetime.datetime.now().year
     current_month = datetime.datetime.now().month
 
     first_of_month = datetime.datetime(current_year,
