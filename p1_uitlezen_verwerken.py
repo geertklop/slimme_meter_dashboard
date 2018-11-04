@@ -17,6 +17,8 @@ list_of_interesting_codes = {
 def main_loop():
     while True:
         try:
+            # get start time (for runtime)
+            # get date stamp of p1 reading
             start_time = time.time()
             currentdate = dt.datetime.now()
 

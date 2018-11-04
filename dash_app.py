@@ -43,6 +43,7 @@ def update_graph(n):
     # fetch data from database
     db = sqlite3.connect('/home/gklop/slimme_meter_project/data/meterdata.db')
     df = pd.read_sql_query("select * from meterstanden where currentdate >= '{}';".format(first_of_month), db)
+    
 
     traces = []
     for i in ['verbruik_delta', 'terug_delta']:
