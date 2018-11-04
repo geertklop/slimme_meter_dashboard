@@ -29,7 +29,7 @@ terug1 = values_dict['1-0:2.8.1']
 terug2 = values_dict['1-0:2.8.2']
 
 #connect to db
-db = sqlite3.connect('../data/meterdata.db')
+db = sqlite3.connect('~/slimme_meter_project/data/meterdata.db')
 cursor = db.cursor()
 
 # select last row
