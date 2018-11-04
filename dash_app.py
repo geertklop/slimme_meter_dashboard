@@ -60,7 +60,6 @@ def update_daily_total(n):
         traces.append(go.Bar(
             x=data['currentdate'],
             y=data[i],
-            text=data[i],
             name=i
         ))
 
