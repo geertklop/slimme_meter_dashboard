@@ -64,8 +64,7 @@ def update_daily_total(n):
             'layout': go.Layout(
                 barmode='group',
                 xaxis=dict(title=''),
-                yaxis=dict(title='verbruik in kWh'),
-                hovermode='closest'
+                yaxis=dict(title='verbruik in kWh')
             )
             }
 

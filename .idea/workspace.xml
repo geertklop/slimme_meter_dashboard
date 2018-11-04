@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7764a3d0-545c-48d8-b638-d5e2e05a74cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dash_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p1_uitlezen_verwerken.py" beforeDir="false" afterPath="$PROJECT_DIR$/p1_uitlezen_verwerken.py" afterDir="false" />
     </list>
@@ -45,7 +43,7 @@
         <counts>
           <entry key="dummy" value="36" />
           <entry key="md" value="353" />
-          <entry key="py" value="6622" />
+          <entry key="py" value="6945" />
           <entry key="txt" value="210" />
           <entry key="yaml" value="3" />
         </counts>
@@ -54,7 +52,7 @@
         <counts>
           <entry key="Markdown" value="353" />
           <entry key="PLAIN_TEXT" value="246" />
-          <entry key="Python" value="6622" />
+          <entry key="Python" value="6945" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -62,14 +60,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/p1_uitlezen_verwerken.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-653">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="-18">
+              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="e#2#12#0" expanded="true" />
-                <marker date="1541359618197" expanded="true" signature="118:119" ph="..." />
+                <marker date="1541360735116" expanded="true" signature="118:119" ph="..." />
               </folding>
             </state>
           </provider>
@@ -100,14 +98,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+            <state relative-caret-position="69">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1541359401661" expanded="true" signature="1184:1911" ph="..." />
+                <marker date="1541361503397" expanded="true" signature="1245:3349" ph="..." />
               </folding>
             </state>
           </provider>
@@ -145,9 +143,9 @@
         <option value="$PROJECT_DIR$/airflow_dag.py" />
         <option value="$PROJECT_DIR$/reader_functions/p1_uitlezen_verwerken.py" />
         <option value="$PROJECT_DIR$/wsgi.py" />
-        <option value="$PROJECT_DIR$/dash_app.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/p1_uitlezen_verwerken.py" />
+        <option value="$PROJECT_DIR$/dash_app.py" />
       </list>
     </option>
   </component>
@@ -236,13 +234,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00068" summary="added sqlite into script">
-      <created>1541260498407</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1541260498408</updated>
     </task>
     <task id="LOCAL-00069" summary="added sqlite into script">
       <created>1541329248546</created>
@@ -580,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541359080302</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="created basic Dash app">
+      <created>1541359665931</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1541359665931</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TodoView">
@@ -665,17 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dash_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1541359401661" expanded="true" signature="1184:1911" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -688,11 +675,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/p1_uitlezen_verwerken.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-653">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="-18">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="e#2#12#0" expanded="true" />
-            <marker date="1541359618197" expanded="true" signature="118:119" ph="..." />
+            <marker date="1541360735116" expanded="true" signature="118:119" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1541361503397" expanded="true" signature="1245:3349" ph="..." />
           </folding>
         </state>
       </provider>
