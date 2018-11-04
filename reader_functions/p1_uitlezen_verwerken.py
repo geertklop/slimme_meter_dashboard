@@ -62,5 +62,5 @@ def data_to_sqlite():
     db.close()
 
 
-
-
+currentdate, verbruik1, verbruik2, verbruik2, terug1, terug2 = read_and_extract_data()
+data_to_sqlite()
