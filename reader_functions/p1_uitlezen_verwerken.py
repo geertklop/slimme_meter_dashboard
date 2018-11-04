@@ -1,7 +1,7 @@
 import datetime as dt
 import sqlite3
 
-from reader_functions.telegram_functions import *
+from telegram_functions import *
 
 def read_and_extract_data():
     #get current date/time
