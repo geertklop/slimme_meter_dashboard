@@ -18,7 +18,6 @@ currentdate = dt.datetime.now()
 
 # get current reading
 raw_telegram = read_telegram()
-print(raw_telegram)
 telegram_dict = telegram_to_dict(raw_telegram)
 values_dict = extract_interesting_codes(telegram_dict,
                                         list_of_interesting_codes
