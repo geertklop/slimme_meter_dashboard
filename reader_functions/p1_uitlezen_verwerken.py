@@ -1,6 +1,6 @@
 import datetime as dt
 import sqlite3
-from telegram_functions import *
+from reader_functions.telegram_functions import *
 
 
 def read_and_extract_data():
