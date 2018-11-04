@@ -42,7 +42,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="py" value="6208" />
+          <entry key="py" value="6249" />
           <entry key="txt" value="210" />
           <entry key="yaml" value="3" />
         </counts>
@@ -50,7 +50,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="246" />
-          <entry key="Python" value="6208" />
+          <entry key="Python" value="6249" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -106,11 +106,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+            <state relative-caret-position="240">
+              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1541345747761" expanded="true" signature="1071:1823" ph="..." />
+                <marker date="1541345979102" expanded="true" signature="1102:1836" ph="..." />
               </folding>
             </state>
           </provider>
@@ -237,20 +237,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540725085353</updated>
-    </task>
-    <task id="LOCAL-00057" summary="script into functions">
-      <created>1541237211128</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1541237211128</updated>
-    </task>
-    <task id="LOCAL-00058" summary="script into functions">
-      <created>1541238088807</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1541238088807</updated>
     </task>
     <task id="LOCAL-00059" summary="script into functions">
       <created>1541238152110</created>
@@ -581,7 +567,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541345698498</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="created basic Dash app">
+      <created>1541345751660</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1541345751660</updated>
+    </task>
+    <task id="LOCAL-00107" summary="created basic Dash app">
+      <created>1541345800917</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1541345800917</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TodoView">
@@ -680,11 +680,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dash_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        <state relative-caret-position="240">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1541345747761" expanded="true" signature="1071:1823" ph="..." />
+            <marker date="1541345979102" expanded="true" signature="1102:1836" ph="..." />
           </folding>
         </state>
       </provider>

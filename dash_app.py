@@ -14,7 +14,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div(
     html.Div([
-        html.H2('Energieverbuik per 5 minuten'),
+        html.H2('Energieverbuik per 5 minuten', style={'text-align':'center'}),
         dcc.Graph(id='live-update-graph'),
         dcc.Interval(
             id='interval-component',
