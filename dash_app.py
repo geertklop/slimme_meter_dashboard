@@ -18,7 +18,7 @@ app.Layout = html.Div(
         dcc.Interval(
             id='interval-component',
             interval = 5000,
-            n_interval = 0
+            n_intervals = 0
         )
     ])
 )
